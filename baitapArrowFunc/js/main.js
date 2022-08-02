@@ -25,7 +25,7 @@ const changeActive = (color) => {
   const btn = document.querySelectorAll(`#colorContainer button`);
   for (let i = 0; i < btn.length; i++) {
     const val = btn[i].classList;
-    console.log("val: ", val);
+    // console.log("val: ", val);
     if (val.value === `color-button ${color}`) {
       btn[i].classList.add("active");
       getElement("house").classList = `house ${color}`;
